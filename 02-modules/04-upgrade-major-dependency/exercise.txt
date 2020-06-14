@@ -1,0 +1,14 @@
+to clean-up unsused dependecies
+
+create a go.mod in your lower working directory:
+
+go mod init github.com/imattf/golang-project/02-modules/04-upgrade-major-dependency
+
+cat go.mod
+go list -m all
+go mod tidy
+cat go.mod
+go list -m all
+
+to show the available functions in the upgraded version...
+go doc quote/v3

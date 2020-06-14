@@ -1,0 +1,38 @@
+go list -m all
+
+and got...
+github.com/imattf/golang-project
+golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c
+rsc.io/quote v1.5.2
+rsc.io/sampler v1.3.0
+
+go test
+...test ok
+
+so now try upgraded version (there are several versions available)
+go get rsc.io/sampler@latest
+
+go list -m all
+
+and got...
+github.com/imattf/golang-project
+golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c
+rsc.io/quote v1.5.2
+rsc.io/sampler v1.99.99
+
+go test
+...test failed
+
+so...
+go get rsc.io/sampler@v1.3.1
+
+go list -m all
+
+and got...
+github.com/imattf/golang-project
+golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c
+rsc.io/quote v1.5.2
+rsc.io/sampler v1.3.1
+
+go test
+...test ok

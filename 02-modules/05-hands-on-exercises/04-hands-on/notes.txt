@@ -1,0 +1,24 @@
+I was able to get hands-on #4 working by...
+
+creating a new repo sayit (totally different name than quote)
+
+cloning that repo in higher-level directory than go-project
+
+creating the sayanything.go module, with it's own go.mod file,
+...referencing github.com/imattf/sayit 
+
+
+creating another peer directory "temp01" with the main.go inside of it, 
+...that calls the sayit module
+
+now gonna try w/ quotes in same level directory as sayit,
+...and this one worked. I had to do a go get github.com/imattf/quotes,
+...which pulled down updated version of quotes v0.1.1
+...yay!!!
+
+now gonna try in go-project
+
+
+
+
+

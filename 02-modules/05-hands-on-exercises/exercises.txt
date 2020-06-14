@@ -1,0 +1,42 @@
+Review commands...
+
+go mod init github.com/imattf/golang-project/02-modules/05-hands-on-exercises
+creates a new module, initializing the go.mod file that describes it. 
+
+go build, go test 
+and other package-building commands add new dependencies to go.mod as needed. 
+
+cat go.mod 
+shows the contents of go.mod file
+
+go list -m all 
+prints the current module’s dependencies. 
+direct
+indirect
+
+go list -m -versions <package name>
+lists all of the versions of a package
+
+go get <package name>
+changes the required version of a dependency (or adds a new dependency).
+example: go get rsc.io/quote/v3
+defaults to @latest
+
+go mod tidy 
+removes unused dependencies.
+adds dependencies for other platforms
+
+
+go doc <package name>
+shows us the documentation of a package.
+example: go doc fmt
+
+tags
+create a tag         
+git tag <tag name>
+show a list of all the tags
+
+git tag
+push a tag
+git push --tags
+git push origin <tag name>
