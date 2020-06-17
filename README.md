@@ -1,2 +1,2 @@
 # golang-project
-Homework for collaboration and crawling
+Homework for collaboration and crawling.
